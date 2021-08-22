@@ -8,7 +8,7 @@ Welcome to Autonomous Framework documentation
 
 .. toctree::
 
-   introdution
+   introduction
    drive_by_wire
    communication_interface
    high_performance_compute_platform
