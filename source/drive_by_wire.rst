@@ -22,4 +22,16 @@ An Electronic Control Unit (ECU) will need to be programmed to send the PWM outp
 
 In this project a Tiva C, TM4C123GXL, microcontroller (MCU) has been chosen as the drive-by-wire ECU since it contains all the required periphirals to control and monitor electric motors, e.g: PWM, Quadrature Encoders and CAN interface.
 
-The TM4C is an ARM Cortex M4 MCU with a maximum frequency of 80MHz.
+The TM4C is an ARM Cortex M4 MCU with a maximum frequency of 80MHz, https://www.ti.com/lit/gpn/tm4c123gh6pm
+
+.. image:: resources/TM4C.png
+    :width: 400
+
+For steering and throttle control, pins PD0 and PD1 are programmed to output a PWM at 100Hz. PD0 and PD1 are pinmuxed to PWM0 and PWM1 respectively, on PWM Module 1 and Genarator 0.
+
+For speed measurement the quadrature encoder interface is used with a two channels quadrature encoder sensor, which is installed on the vehicle and connected to the gear box using a 3d printed gear and mounting bracket.
+
+.. image:: resources/Quadrature_encoder.jpg
+    :width: 400
+
+The TM4C has two quadrature encoder interface in this project QEI0 is used and channel 0 and 1 of the quadrature encoder sensor are connected to pins PD6 and PD7 respectively.
