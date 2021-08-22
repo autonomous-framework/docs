@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Drive By Wire'
+project = 'Autonomous Framework'
 copyright = '2021, Ahmed Sobhy'
 author = 'Ahmed Sobhy'
 
